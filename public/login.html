@@ -1,0 +1,367 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <meta name="id" content="auth1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <style type="text/css">
+/* == Stili di base - Mobile first ===== */
+
+
+/* == Media queries (breakpoint) ===== */
+
+
+body{
+	font-family:Lucida Grande,Lucida Sans Unicode,Helvetica,Arial,Verdana,sans-serif;
+	background-color:#822433;
+}
+#header {
+	margin:0 auto 0 auto;
+	clear:both;
+	border-radius:20px;
+	width:300px;
+
+}
+#header img {max-width: 100%;}
+#content {
+	margin:0 auto 0 auto;
+	clear:both;
+	background-color: #FFF;
+	border-radius:20px;
+	width:300px;
+	height:300px;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+
+}
+#content_regolamento {
+	margin:0 auto 0 auto;
+	clear:both;
+	background-color: #FFF;
+	border-radius:20px;
+	width:300px;
+	height:215px;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+
+}
+#content h4 {
+	color:#822433;
+	font-weight:bold;
+	font-size:1em;
+	border-bottom:1px solid #cccccc;
+	padding-bottom:0.5em;
+	padding-top: 0.5em;
+	text-align:center;
+}
+.testo{
+	font-size: 1em;
+	color: #333;
+}
+.testo_regolamento{
+	font-size: 0.8em;
+	color: #333;
+}
+input.text {
+	font-size: 0.9em;
+	width: 200px;
+	float:right;
+}
+input.login {
+	color : #FFFFFF;
+	background-color: #981e32;
+	width: 120px;
+	border: #ccc 1px solid;
+	text-align:center;
+	float: right;
+	margin-top: 10px;
+}
+#intro {
+	padding-top:0.5em;
+}
+#studenti {
+	padding-top: 0.5em;
+}
+#strutturati {
+	padding-top: 0.5em;
+}
+#username {
+	float: left;
+    width: 5em;
+    padding-right: 0.5em;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+}
+#password {
+	float: left;
+    width: 5em;
+    padding-right: 0.5em;
+    }
+#login {
+
+}
+#username_ct {
+	padding-top: 0.5em;
+	float: left;
+}
+#password_ct {
+	float: left;
+}
+#footer {
+	margin:1em auto 0 auto;
+	clear:both;
+	background-color: #FFF;
+	border-radius:20px;
+	width:300px;
+	height:70px;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+
+}
+#testo_footer_l1 {
+	padding-top: 0.5em;
+	font-size: 1em;
+	color: #333;
+	text-align: center;
+}
+#testo_footer_l2 {
+	font-size: 1em;
+	color: #333;
+	text-align: center;
+}
+#testo_footer_l3 {
+	font-size: 1em;
+	color: #333;
+	text-align: center;
+}
+.error {
+	color: #990000;
+	font-weight: bold;
+	text-align:center;
+	padding-top: 0.5em;
+}
+#header h4{
+	display: none;
+}
+.clear {
+	clear: both;
+}
+textarea {
+    width: 100%;
+    height: 30%;
+}
+img#pdf {
+    padding-bottom: 1em;
+    padding-right: 0.2em;
+    width: 5%;
+}
+/* -----------------------------------
+iPhone PORTRAIT
+------------------------------------ */
+@media only screen and (min-width: 568px) {
+	#content h4 {
+		display: none;
+	}
+	#header h4 {
+		color:#FFFFFF;
+		font-weight:bold;
+		font-size:1em;
+		display: block;
+	    float: right;
+	    vertical-align: top;
+		text-align:center;
+	}
+	#content {
+		margin:0 auto 0 auto;
+		clear:both;
+		background-color: #FFF;
+		border-radius:20px;
+		width:500;
+		height:210px;
+		padding-left: 0.5em;
+		padding-right: 0.5em;
+	}
+    #content_regolamento {
+		margin:0 auto 0 auto;
+		clear:both;
+		background-color: #FFF;
+		border-radius:20px;
+		width:500;
+		height:210px;
+		padding-left: 0.5em;
+		padding-right: 0.5em;
+	}
+	#header {
+		margin:0 auto 0 auto;
+		clear:both;
+		border-radius:20px;
+		width:500px;
+	}
+	.testo{
+		font-size: 1em;
+		color: #333;
+		padding-top:0.5em;
+        padding-left: 1em;
+        padding-right: 1em;
+	}
+    .testo_regolamento{
+		font-size: 0.8em;
+		color: #333;
+		padding-top:0.5em;
+        padding-left: 1em;
+        padding-right: 1em;
+	}
+	input.text {
+		width: 200px;
+		float:none;
+	}
+	input.login {
+		color : #FFFFFF;
+		background-color: #981e32;
+		width: 120px;
+		border: #ccc 1px solid;
+		text-align:center;
+		float: right;
+		margin-top: 0px;
+	}
+	#footer {
+		margin:1em auto 0 auto;
+		clear:both;
+		background-color: #FFF;
+		border-radius:20px;
+		width:500;
+		height:45px;
+		padding-left: 0.5em;
+		padding-right: 0.5em;
+
+	}
+	#testo_footer_l1 {
+		padding-top: 0.2em;
+		}
+	#testo_footer_l2 {
+		float: left;
+		padding-left: 3em;
+	}
+	#testo_footer_l3 {
+		float: right;
+		padding-right: 3em;
+	}
+
+}
+
+/* -----------------------------------
+IPAD PORTRAIT
+------------------------------------ */
+@media only screen and (min-width: 768px) {
+	#header {
+		width:600px;
+		height: 50px;
+	}
+	#header h4 {
+		font-size:1.2em;
+	}
+	#content {
+		width:600px;
+        height:260px;
+	}
+	#content_regolamento {
+		width:600px;
+        height:260px;
+	}
+	.testo{
+		font-size: 1.2em;
+		padding-top:0.5em;
+		padding-left: 1em;
+        padding-right: 1em;
+	}
+	.testo_regolamento{
+		font-size: 1em;
+		padding-top:0.5em;
+		padding-left: 1em;
+        padding-right: 1em;
+	}
+	#username {
+		padding-top: 1em;
+	    padding-left: 4em;
+	}
+	#username_ct {
+		padding-top: 1em;
+	}
+
+	#password {
+		padding-left: 4em;
+	}
+	#login {
+		clear: both;
+	}
+	#footer {
+		width:600;
+		height:80px;
+	}
+	#testo_footer_l1 {
+		padding-top: 0.5em;
+		font-size: 1.2em;
+	}
+	#testo_footer_l2 {
+		padding-top: 0.5em;
+		float: left;
+		padding-left: 4em;
+	}
+	#testo_footer_l3 {
+		padding-top: 0.5em;
+		float: right;
+		padding-right: 4em;
+	}
+}
+
+/* -----------------------------------
+IPAD LANDSCAPE + NETBOOK
+------------------------------------ */
+@media only screen and (min-width: 1020px){
+
+}
+
+/* -----------------------------------
+DESKTOP
+------------------------------------ */
+@media only screen and (min-width: 1200px){
+
+}
+
+</style>
+    <title>Sapienza-SPV</title>
+  </head>
+  <body>
+    <div id="body">
+      <div id="header">
+	      <img alt="logo-sapienza" src="sapienza.jpg" >
+	      <h4>Sapienza Wireless</h4>
+      </div>
+      <form method="post" action="/login">
+          <div id="content">
+
+          <h4>Sapienza Wireless</h4>
+          <div class="error"></div>
+          <div class="testo">
+		  	<div id="intro">Eseguire il login per accedere alla rete</div>
+	         <div id="studenti">Studenti: matricola e password di Infostud</div>
+	          <div id="strutturati">Strutturati: indirizzo email completo (<b>nome.cognome@uniroma1.it</b>) e password della posta</div>
+	          <div id="username">Username </div><div id="username_ct"><input class="text" name="auth_user" type="text"></div>
+	          <div class="clear"></div>
+	          <div id="password">Password </div><div id="password_ct"><input class="text" name="auth_pass" type="password"></div>
+              <div id="login"><input name="accept" class="login" value="Accedi" type="submit"></div>
+	          <input name="redirurl" value="" type="hidden">
+          </div>
+
+      </div>
+          <div class="clear"><br></div>
+        </form>
+      <div id="footer">
+	      <div id="testo_footer_l1">Centro Infosapienza - Area SPV</div>
+	      <div class="clear"></div>
+		  <div id="testo_footer_l2">Tel: 06 4969 0113</div>
+		  <div id="testo_footer_l3">e-mail: netcom@uniroma1.it </div>
+	</div>
+    </div>
+  </body>
+</html>
